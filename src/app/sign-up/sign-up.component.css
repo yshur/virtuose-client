@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://www.fontify.me/wf/1e6b054bebc65767084f30b7ae3c89e8');
+main {
+  /* font-family: Helvetica; */
+  font-family: font36450;
+    background-color: #FFC600;
+    height: 600px;
+    width: 100%;
+    margin-top: 59px;  
+    margin: 0 auto;
+    position: absolute;
+}
+h1 {
+  font-family: 'Grand Hotel', cursive;  
+    margin-left: 77px;
+    margin-top: 28px;   
+    font-weight: bolder;
+}
+h5 {
+    font-size: 20px;
+}
+h5 a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: normal;
+}
+button{
+    height: 37px;
+    width: 140px;
+    background: #e3e3e3;
+    color:#2e318c;
+    display: block;
+    position: absolute;
+    margin-left: 1052px;
+    margin-top: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    border-style: none;
+    font-weight: bold;
+}
+img{
+    margin-left: 193px;
+}
+a{
+    text-decoration: none;
+    color: #2E318C;
+    font-weight: bolder;
+    margin-top: 26px;
+    font-size: 90%;
+}
+
+#login{
+    width: 415px;
+    height: 466px;
+    position: absolute;
+    margin-left: 0px;
+    background-color: #ffffff;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    margin-top: 88px;
+    margin-left:688px; 
+}
+#picdiv{
+    width: 442px;
+    height: 466px;
+    position: absolute;
+    background-color: #98005D;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    margin-top: 88px;
+    margin-left: 246px;
+}
+#piano{
+    position: absolute;
+    margin-left: 143px;
+    margin-top: 42px;
+}
+
+form{
+    margin-left: 77px;
+    font-size: 15px;
+}
+input{
+    border-radius: 17px;
+    margin-bottom: 14px;
+    height: 28px;
+    width: 236px;
+    background-color: #F4F4F4;
+    border-style: none;
+    font-size: 90%;
+    padding-left: 30px;
+}
+#check{
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+}
+#submit{
+    background-color: #22AF73;
+    color:#ffffff;
+    height: 41px;
+    width: 266px; 
+}
+#agree{
+    font-size: 15px;
+    color: #666666;
+}
+#facebook{
+    margin-top: -10px;    
+    background-color: #4979D5;
+    color:#ffffff;
+    height: 41px;
+    width: 266px;
+    margin-left: 77px;
+}
+#hrl{
+    float: left;
+}
+#hrr{
+    float: right;
+}
+hr {
+    margin-top: 0px;
+    width: 148px;
+    display: inline-block;
+}
+span{ 
+    margin-top: -40px; 
+    display: block;
+    margin-bottom: 30px;    
+}
+/*---------------*/

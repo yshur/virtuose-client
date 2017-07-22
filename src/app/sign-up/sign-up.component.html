@@ -1,41 +1,51 @@
+<main>
+<div id="login">
 <div class="row">
   <div class="col-xs-12">
+    <h1>Welcome to Virtuoso!</h1>
     <form (ngSubmit)="onSetItem(f)" #f="ngForm">
-      <h3>Sign Up: </h3>
+      <h5>Not registred? 
+        <a routerLink="/sign-in"> Sign In: </a></h5>
       <div class="row">
-        <div class="col-sm-5 form-group">
-          <p><label for="name">NAME: </label>
+        <div class="col-sm-12 form-group">
           <input type="text" id="name" class="form-control"
-          name="name" ngModel required></p>
-          <p><label for="email">EMAIL: </label>
+            name="name" ngModel placeholder="Name" required>
           <input type="email" id="email" class="form-control"
-          name="email" ngModel required></p>
-          <p><label for="pass">PASSWORD: </label>
+           name="email" ngModel placeholder="Email" required>
           <input type="password" id="pass" class="form-control"
-          name="pass" ngModel required></p>          
-        </div>
-      </div> 
-      <div class="row">
-        <div class="col-xs-12">
-          <button class="btn btn-success" type="submit"
-          [disabled]="!f.valid">Submit</button>
-        </div>
+           name="pass" ngModel placeholder="Password" required>        
+          <label id="agree">
+            <input type="checkbox" name="check" 
+              checked id="check">
+                i agree with terms and conditions
+          </label>
+          <p><input type="submit" class="btn btn-success" 
+          value="SIGN UP" id="submit" [disabled]="!f.valid"></p>
+         </div>
       </div>
     </form>
+     <hr id="hrl"><hr id="hrr">
+     <span>or connect with </span>
+    <input type="submit" value="SIGN IN WITH FASEBOOK" id="facebook">                  
   </div>
 </div>
 <div class="row">
   <div class="col-xs-6">
     <ul class="list-group">
       <a class="list-group-item"
-       *ngIf="HeaderService.user; else helpText">
+       *ngIf="HeaderService.user; else errorText">
       name = {{HeaderService.user.name}}, email = {{HeaderService.user.email}} 
-      </a>
-      <ng-template #helpText>
-        <h4>Submit user</h4>
-      </ng-template>
+      </a>      
+      <ng-template #errorText>
+        <a class="list-group-item"
+         *ngIf="this.error;">
+          <h4>error was happen!!</h4>
+        </a>        
+      </ng-template>      
     </ul>
   </div>
 </div>
-
-
+</div>
+  <div id="picdiv"></div>
+  <img src="./assets/piano.png" id="piano">
+</main>

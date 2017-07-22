@@ -102,7 +102,7 @@ input{
     width: 266px; 
 }
 #agree{
-    font-size: 10px;
+    font-size: 15px;
     color: #666666;
 }
 #facebook{
@@ -120,12 +120,12 @@ input{
     float: right;
 }
 hr {
-    margin-top: -20px;
+    margin-top: 0px;
     width: 148px;
     display: inline-block;
 }
 span{ 
-    margin-top: -20px; 
+    margin-top: -40px; 
     display: block;
     margin-bottom: 30px;    
 }
