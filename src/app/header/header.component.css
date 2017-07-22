@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://www.fontify.me/wf/1e6b054bebc65767084f30b7ae3c89e8');
+. {
+  /* font-family: Helvetica; */
+  font-family: font36450;
+}
 nav {
-  background: #d9d9d9;
+  height: 53px;
   color: #000;
-  font-weight: bold;  
+  background:#4ebdc1;
+  /* font-family: Helvetica; */
+  font-family: font36450;
+  font-size: 20px;
 }
 #logo {
   background: #ffffff;
+  font-family: 'Grand Hotel', cursive; 
+  font-size: 30px; 
+  font-weight: normal;  
+}
+#login {
+    width: 160px;
+    background: #e3e3e3;
+    color:#2e318c;
+    border-radius: 20px;
+    border-style: none;
+    text-align: center;
 }

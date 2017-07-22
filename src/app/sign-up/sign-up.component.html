@@ -1,30 +1,26 @@
-<main>
 <div class="row">
   <div class="col-xs-12">
-    <h1>Welcome to Virtuoso!</h1>
     <form (ngSubmit)="onSetItem(f)" #f="ngForm">
-      <h3>Already registred? Sign in:</h3>
+      <h3>Sign Up: </h3>
       <div class="row">
         <div class="col-sm-5 form-group">
           <p><label for="name">NAME: </label>
           <input type="text" id="name" class="form-control"
-          name="name" ngModel placeholder="Name.." required></p>
+          name="name" ngModel required></p>
           <p><label for="email">EMAIL: </label>
           <input type="email" id="email" class="form-control"
-          name="email" ngModel placeholder="Email.." required></p>
+          name="email" ngModel required></p>
           <p><label for="pass">PASSWORD: </label>
           <input type="password" id="pass" class="form-control"
-          name="pass" ngModel placeholder="Password.." required></p>          
+          name="pass" ngModel required></p>          
         </div>
       </div> 
       <div class="row">
         <div class="col-xs-12">
           <button class="btn btn-success" type="submit"
-          [disabled]="!f.valid">SIGN IN</button>
+          [disabled]="!f.valid">Submit</button>
         </div>
       </div>
-      <hr id="hrl"><span>or connect with </span><hr id="hrr">
-      <input type="submit" value="SIGN IN WITH FACEBOOK" id="facebook">
     </form>
   </div>
 </div>
@@ -32,18 +28,14 @@
   <div class="col-xs-6">
     <ul class="list-group">
       <a class="list-group-item"
-       *ngIf="HeaderService.user; else errorText">
+       *ngIf="HeaderService.user; else helpText">
       name = {{HeaderService.user.name}}, email = {{HeaderService.user.email}} 
-      </a>      
-      <ng-template #errorText>
-        <a class="list-group-item"
-         *ngIf="this.error;">
-          <h4>error: The details don't match to any User</h4>
-        </a>        
-      </ng-template>      
+      </a>
+      <ng-template #helpText>
+        <h4>Submit user</h4>
+      </ng-template>
     </ul>
   </div>
 </div>
-  <div id="picdiv"></div>
-  <img src="../../assets/piano.png" id="piano">
-</main>
+
+

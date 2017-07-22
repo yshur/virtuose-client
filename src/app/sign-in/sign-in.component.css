@@ -1,0 +1,113 @@
+/*---------index--------*/
+body{
+       font-family: Helvetica;
+}
+header{
+    height: 67px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    background:#4ebdc1;
+    position: absolute;
+}
+button{
+    height: 37px;
+    width: 140px;
+    background: #e3e3e3;
+    color:#2e318c;
+    display: block;
+    position: absolute;
+    margin-left: 1052px;
+    margin-top: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    border-style: none;
+    font-weight: bold;
+}
+img{
+    margin-left: 193px;
+}
+a{
+    text-decoration: none;
+    color: #2E318C;
+    font-weight: bolder;
+    margin-top: 26px;
+    font-size: 90%;
+}
+
+main{
+    background-color: #FFC600;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    margin-top: 59px;
+    left: 0px;
+}
+
+#picdiv{
+    width: 442px;
+    height: 466px;
+    position: absolute;
+    background-color: #98005D;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    margin-top: 88px;
+    margin-left: 246px;
+}
+#piano{
+    margin-left: 143px;
+    margin-top: 42px;
+}
+
+form{
+    margin-left: 77px;
+    margin-top: 68px;
+    font-size: 70%;
+}
+input{
+    border-radius: 17px;
+    margin-bottom: 14px;
+    height: 28px;
+    width: 236px;
+    background-color: #F4F4F4;
+    border-style: none;
+    font-size: 90%;
+    padding-left: 30px;
+}
+#check{
+    width: 15px;
+    height: 15px;
+    font-size: 80%;
+}
+#submit{
+    background-color: #22AF73;
+    color:#ffffff;
+    height: 41px;
+    width: 266px;
+    margin-bottom: 22px; 
+}
+#agree{
+    font-size: 70%;
+    color: #666666;
+}
+#facebook{
+    background-color: #4979D5;
+    color:#ffffff;
+    height: 41px;
+    width: 266px;
+    margin-top: 24px;
+}
+#hrl{
+    margin-left: -77px;
+    width: 148px;
+    display: inline-block;
+}
+#hrr{
+    width: 148px;
+    display: inline-block;
+}
+span{
+    margin-right: 18px;
+    margin-left: 18px;
+}
+/*---------------*/
