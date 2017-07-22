@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 
 import { SongDetailComponent } from './song-list/song-detail/song-detail.component';
 import { Song } from '../shared/song.model';
+import { FooterComponent } from '../footer/footer.component';
 import { HeaderService } from '../header/header.service';
 
 @Component({
@@ -23,7 +24,7 @@ export class SongsComponent implements OnInit {
         this.songSelected = song;
         console.log(this.songSelected);
       }
-      )
+      );
   }
 
 }

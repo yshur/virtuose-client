@@ -8,6 +8,7 @@ import { Song } from '../shared/song.model';
 export class HeaderService {
   itemAdded = new EventEmitter<Song[]>();
   itemSelected = new EventEmitter<Song>();
+  userSignedIn = new EventEmitter<User>();
 
   public user: User;//need to get dynamic data from DB
   public randomSongs: Song[] = [];//need to get dynamic data from DB
@@ -58,7 +59,7 @@ export class HeaderService {
     );
     }
   }
-  onHistoryAdded(song: Song) {
+  public onHistoryAdded(song: Song) {
     if(this.user == null)  {
 
     } else {
@@ -77,7 +78,7 @@ export class HeaderService {
       this.itemAdded.emit(this.historySongs.slice());
     }    
   }
-  onLikeAdded(song: Song) {
+  public onLikeAdded(song: Song) {
     if(this.user == null)  {
 
     } else {
@@ -96,7 +97,7 @@ export class HeaderService {
       this.itemAdded.emit(this.likesSongs.slice());
     }    
   }  
-  onLikeRemove(song: Song) {
+  public onLikeRemove(song: Song) {
     if(this.user == null)  {
 
     } else {
@@ -126,10 +127,7 @@ export class HeaderService {
       }
     );    
   }
-  // getRandomSongs() { //return a copy of the org obj
-  //   this.getRandomSongList();
-  //   return this.randomSongs.slice(); //should be inside callback?
-  // }
+
   public signInUser (
       userName: string,
       userEmail: string,
@@ -151,14 +149,7 @@ export class HeaderService {
       }
     );
   }
-  // public getSignIn (  //return a copy of the org obj
-  //     userName: string,
-  //     userEmail: string,
-  //     userPassword: string
-  //   ) { //should be inside callback?
-  //   this.signInUser (userName, userEmail, userPassword);
-  //   return this.user;
-  // }
+
 
   public signUpUser(
       userName: string,

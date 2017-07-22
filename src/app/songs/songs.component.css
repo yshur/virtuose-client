@@ -1,0 +1,42 @@
+@import url('https://www.fontify.me/wf/1e6b054bebc65767084f30b7ae3c89e8');
+
+
+#playlists{
+   height: 601px;
+   width: 250px;
+   top:0px;
+   right: 0px;
+   float: right;
+   background: #8d2789;
+   color:#ffffff;
+   font-size: 68%;
+  /* font-family: Helvetica; */
+  font-family: font36450;
+}
+#aside {
+  background: #ffcc1a;
+  height: 681px;
+  width: 183px;
+  float: left;
+  margin-left: 0px;
+  padding-left: 20px;
+  /* font-family: Helvetica; */
+  font-family: font36450;
+  font-size: 10px;
+  color:#ffffff;  
+}
+#footer{
+    position: fixed;
+    height:90px;
+    width: 100%;
+    bottom: 0px;
+    background:#4ebdc1;
+    display: block;
+
+}
+#main{
+    width: 800px;
+    margin-left: 189px;
+    display: block;
+    position: absolute;
+}

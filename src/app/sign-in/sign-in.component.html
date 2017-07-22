@@ -32,9 +32,11 @@
 <div class="row">
   <div class="col-xs-6">
     <ul class="list-group">
-      <a class="list-group-item"
+      <a routerLink="/songs" class="list-group-item"
        *ngIf="HeaderService.user; else errorText">
-      name = {{HeaderService.user.name}}, email = {{HeaderService.user.email}} 
+      You logged in successfully!! 
+      name = {{HeaderService.user.name}}, email = {{HeaderService.user.email}}. 
+      press here for listen to songs
       </a>      
       <ng-template #errorText>
         <a class="list-group-item"

@@ -1,15 +1,29 @@
+<div id="aside">
+  <app-menu-aside>
+  </app-menu-aside>
+</div>
+<div id="main">
 <div class="row">
-  <div class="col-md-5">
+  <div class="col-md-7">
     <app-song-list
     ></app-song-list>
   </div>
-  <div class="col-md-7">
+  <div class="col-md-5">
     <app-song-detail
     *ngIf="songSelected; else helpText"
     [song]="songSelected"
     ></app-song-detail>
     <ng-template #helpText>
-      <h4>Select a song</h4>
     </ng-template>
   </div>
+</div>
+</div>
+<div id="playlists" class="col-md-2">
+  <app-playlists>
+  </app-playlists>
+</div>
+<div id="footer">
+  <app-footer *ngIf="songSelected;"
+    [song]="songSelected">
+  </app-footer>
 </div>

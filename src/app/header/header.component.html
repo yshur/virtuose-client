@@ -6,6 +6,10 @@
     </div>
 
     <div class="navbar-default">
+      <form *ngIf="HeaderService.user; else menuText">
+          <input type="text" name="search" placeholder="Search Music">
+      </form>
+      <ng-template #menuText>
       <ul class="nav navbar-nav">
         <li routerLinkActive="active">
           <a id="a" routerLink="/songs">Home</a></li>
@@ -14,12 +18,20 @@
         <li routerLinkActive="active">
           <a id="a" routerLink="/songs">Listen & Learn</a></li>          
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      </ng-template>
+      <ul *ngIf="HeaderService.user; else signInText"
+        class="nav navbar-nav navbar-right">
+        <li id="login" routerLinkActive="active">
+          <a id="b" routerLink="/songs">Hi {{HeaderService.user.name}}!</a></li>
+       </ul>
+       <ng-template #signInText>
+       <ul class="nav navbar-nav navbar-right">
         <li id="login" routerLinkActive="active">
           <a id="b" routerLink="/sign-up">{{userName}}</a></li>
         <li id="login" routerLinkActive="active">
           <a id="b" routerLink="/sign-in">Sign in</a></li>
       </ul>
+      </ng-template>
     </div>
   </div>
 </nav>

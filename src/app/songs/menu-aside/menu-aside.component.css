@@ -1,0 +1,42 @@
+
+h4{
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+ul {
+  list-style-type: none;
+  margin-left: -35px;
+  margin-bottom: 25px;  
+}
+li {
+  display: block;
+    padding-left: 30px;
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+  background-position: 0px;
+  background-repeat: no-repeat;
+}
+#m {
+  background-image: url('../../../assets/mixtape.png'); 
+}
+#p {
+  background-image: url('../../../assets/popular.png'); 
+}
+#f {
+  background-image: url('../../../assets/feature.png'); 
+}
+#c {
+  background-image: url('../../../assets/composers.png'); 
+}
+#co {
+  background-image: url('../../../assets/collection.png'); 
+}
+#r {
+  background-image: url('../../../assets/raited.png'); 
+}
+#l {
+  background-image: url('../../../assets/listen.png'); 
+
+}
