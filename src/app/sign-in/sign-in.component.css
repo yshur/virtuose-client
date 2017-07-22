@@ -1,14 +1,28 @@
-/*---------index--------*/
-body{
-       font-family: Helvetica;
-}
-header{
-    height: 67px;
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://www.fontify.me/wf/1e6b054bebc65767084f30b7ae3c89e8');
+main {
+  /* font-family: Helvetica; */
+  font-family: font36450;
+    background-color: #FFC600;
+    height: 600px;
     width: 100%;
-    top:0px;
-    left: 0px;
-    background:#4ebdc1;
+    margin-top: 59px;  
+    margin: 0 auto;
     position: absolute;
+}
+h1 {
+  font-family: 'Grand Hotel', cursive;  
+    margin-left: 77px;
+    margin-top: 28px;   
+    font-weight: bolder;
+}
+h5 {
+    font-size: 20px;
+}
+h5 a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: normal;
 }
 button{
     height: 37px;
@@ -35,15 +49,17 @@ a{
     font-size: 90%;
 }
 
-main{
-    background-color: #FFC600;
-    height: 600px;
-    width: 100%;
+#login{
+    width: 415px;
+    height: 466px;
     position: absolute;
-    margin-top: 59px;
-    left: 0px;
+    margin-left: 0px;
+    background-color: #ffffff;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    margin-top: 88px;
+    margin-left:688px; 
 }
-
 #picdiv{
     width: 442px;
     height: 466px;
@@ -55,14 +71,14 @@ main{
     margin-left: 246px;
 }
 #piano{
+    position: absolute;
     margin-left: 143px;
     margin-top: 42px;
 }
 
 form{
     margin-left: 77px;
-    margin-top: 68px;
-    font-size: 70%;
+    font-size: 15px;
 }
 input{
     border-radius: 17px;
@@ -77,37 +93,40 @@ input{
 #check{
     width: 15px;
     height: 15px;
-    font-size: 80%;
+    font-size: 10px;
 }
 #submit{
     background-color: #22AF73;
     color:#ffffff;
     height: 41px;
-    width: 266px;
-    margin-bottom: 22px; 
+    width: 266px; 
 }
 #agree{
-    font-size: 70%;
+    font-size: 10px;
     color: #666666;
 }
 #facebook{
+    margin-top: -10px;    
     background-color: #4979D5;
     color:#ffffff;
     height: 41px;
     width: 266px;
-    margin-top: 24px;
+    margin-left: 77px;
 }
 #hrl{
-    margin-left: -77px;
-    width: 148px;
-    display: inline-block;
+    float: left;
 }
 #hrr{
+    float: right;
+}
+hr {
+    margin-top: -20px;
     width: 148px;
     display: inline-block;
 }
-span{
-    margin-right: 18px;
-    margin-left: 18px;
+span{ 
+    margin-top: -20px; 
+    display: block;
+    margin-bottom: 30px;    
 }
 /*---------------*/

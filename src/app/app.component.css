@@ -1,5 +1,6 @@
-@import url('https://www.fontify.me/wf/1e6b054bebc65767084f30b7ae3c89e8');
-. {
-  /* font-family: Helvetica; */
-  font-family: font36450;
+
+#body {
+  height: 100%;
+  width: 100%;
+   background-color: #FFC600;
 }

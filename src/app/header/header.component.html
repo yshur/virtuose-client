@@ -1,3 +1,4 @@
+<header>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="nanbar-header" routerLinkActive="active">
@@ -7,18 +8,19 @@
     <div class="navbar-default">
       <ul class="nav navbar-nav">
         <li routerLinkActive="active">
-          <a routerLink="/songs">Home</a></li>
+          <a id="a" routerLink="/songs">Home</a></li>
         <li routerLinkActive="active">
-          <a routerLink="/songs">Mixtapes</a></li>
+          <a id="a" routerLink="/songs">Mixtapes</a></li>
         <li routerLinkActive="active">
-          <a routerLink="/songs">Listen & Learn</a></li>          
+          <a id="a" routerLink="/songs">Listen & Learn</a></li>          
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li id="login" routerLinkActive="active">
-          <a routerLink="/sign-up">{{userName}}</a></li>
+          <a id="b" routerLink="/sign-up">{{userName}}</a></li>
         <li id="login" routerLinkActive="active">
-          <a routerLink="/sign-in">Sign in</a></li>
+          <a id="b" routerLink="/sign-in">Sign in</a></li>
       </ul>
     </div>
   </div>
 </nav>
+</header>
