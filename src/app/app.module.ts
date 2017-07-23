@@ -17,6 +17,7 @@ import { SongItemComponent } from './songs/song-list/song-item/song-item.compone
 import { SongDetailComponent } from './songs/song-list/song-detail/song-detail.component';
 import { HistoryComponent } from './songs/playlists/history/history.component';
 import { LikesComponent } from './songs/playlists/likes/likes.component';
+import { HeaderUserComponent } from './header/header-user/header-user.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LikesComponent } from './songs/playlists/likes/likes.component';
     SongItemComponent,
     SongDetailComponent,
     HistoryComponent,
-    LikesComponent
+    LikesComponent,
+    HeaderUserComponent
   ],
   imports: [
     BrowserModule,

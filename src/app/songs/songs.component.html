@@ -4,11 +4,7 @@
 </div>
 <div id="main">
 <div class="row">
-  <div class="col-md-7">
-    <app-song-list
-    ></app-song-list>
-  </div>
-  <div class="col-md-5">
+  <div class="col-md-2">
     <app-song-detail
     *ngIf="songSelected; else helpText"
     [song]="songSelected"
@@ -16,6 +12,11 @@
     <ng-template #helpText>
     </ng-template>
   </div>
+  <div class="col-md-10">
+    <app-song-list
+    ></app-song-list>
+  </div>
+
 </div>
 </div>
 <div id="playlists" class="col-md-2">

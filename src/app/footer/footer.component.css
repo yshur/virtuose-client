@@ -1,0 +1,21 @@
+#name {
+  color: #fff;
+}
+img {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+label {
+  margin-right: 40px;
+  font-weight: normal;
+}
+span {
+  display: block;
+}
+/*audio {
+  display: none;
+}*/

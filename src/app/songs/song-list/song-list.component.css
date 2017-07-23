@@ -1,0 +1,8 @@
+.item {
+  height: 180px;
+  width: 180px;
+  margin: 15px;
+  margin-bottom: 15px;
+  float: right;
+  position: relative;
+}

@@ -7,7 +7,8 @@ export class Song {
     public image: string,
     public voice: string, 
     public tags: [string],
-    public __v: number
+    public __v: number,
+    public album: string
     ) 
   { }
 }

@@ -1,10 +1,14 @@
 <div class="row">
   <div class="col-xs-12">
-    <h1>{{song.name}}</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    {{song.voice}}
+  <label>
+    <img src="{{song.image}}" alt="{{song.name}}" class="img-responsive">
+  </label>
+    <label>
+      <span id="name">{{song.name}}</span>
+      <span>{{song.album}}</span>
+    </label>
+    <label>
+    <audio autoplay controls src={{song.voice}}>no support</audio>
+    </label>
   </div>
 </div>
