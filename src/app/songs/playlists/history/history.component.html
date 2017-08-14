@@ -1,3 +1,5 @@
-<p>
-  history works!
-</p>
+<a routerLink="/songs"
+  class="list-group-item clearfix"
+  (click)="onSelected()">
+    {{song.name}} {{song.length}}<br>{{song.compositor}}
+</a>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { HeaderService } from '../../header/header.service';
+import { Song } from '../../shared/song.model';
 
 @Component({
   selector: 'app-playlists',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlaylistsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public HeaderService: HeaderService) { }
 
   ngOnInit() {
+    this.HeaderService.getSongHistoryList();        
+    this.HeaderService.getSongLikesList();       
   }
 
 }

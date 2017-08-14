@@ -1,18 +1,17 @@
 <p>Playlist</p>
 <h4>My Mixtapes</h4>
+<h5>history</h5>
 <ul>
-    <a>Peer Gyent Suite 5:24 <br> Edvard Grieg</a>
-    <a>Symphony No.5 3:19<br> Ludwig Van Beethoven</a>
-    <a>The Four Seasons 5:16 <br> Antonio Viavidi</a>
-    <a>Adagio for Strings 4:12 <br> Samuel Barber</a>
-    <a>The Vlkyrie 5:16<br> Richard Wagner</a>
-    <a>Nocturne No2 3:19 <br> Fredric Chopin</a>
-    <a>Canon in D major 4:12 <br> Johann Pachelble</a>
-    <a>Pear Gynt Suite 5:16 <br> Edvard Grieg</a>
-    <a>Symphony No.5 4:02 <br> Ludwig Van Beethoven</a>
-    <a>The Four Seasons 6:16 <br> Antonio Viavidi</a>
-    <a>Adagio for Strings 4:07 <br> Samuel Barber</a>
-    <a>The Vlkyrie 4:02<br> Richard Wagner</a>
-    <a>Nocturne No2 6:11 <br> Fredric Chopin</a>
-    <a>Canon in D major 4:02 <br> Johann Pachelble</a>
+  <app-history class="item"
+    *ngFor="let songEl of HeaderService.historySongs"
+    [song]="songEl">   
+  </app-history>
 </ul>
+<h5>likes</h5>
+<ul>
+  <app-likes class="item"
+    *ngFor="let songEl of HeaderService.likesSongs"
+    [song]="songEl">   
+  </app-likes>
+</ul>
+

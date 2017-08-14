@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { HeaderService } from '../../../header/header.service';
+import { Song } from '../../../shared/song.model';
 
 @Component({
   selector: 'app-likes',
@@ -6,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./likes.component.css']
 })
 export class LikesComponent implements OnInit {
-
-  constructor() { }
-
+  @Input() song: Song;
+  constructor(public HeaderService: HeaderService) { }
+  onSelected() {
+     this.HeaderService.itemSelected.emit(this.song);
+  }
   ngOnInit() {
   }
 
