@@ -23,7 +23,7 @@ export class HeaderService {
   public getSongHistoryList (
     ) { //runs only once? 
     this.http.post(
-        'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/getSongHistoryList',
+        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/getSongHistoryList',
         { user_name: this.userName,
           email: this.userEmail }
       ).subscribe(//callback for any change in Fairytail array
@@ -40,7 +40,7 @@ export class HeaderService {
   public getSongLikesList (
     ) { //runs only once? 
     this.http.post(
-        'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/getSongLikesList',
+        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/getSongLikesList',
         { user_name: this.userName,
           email: this.userEmail }
       ).subscribe(//callback for any change in Fairytail array
@@ -57,7 +57,7 @@ export class HeaderService {
   public onHistoryAdded(song: Song) {
       this.historySongs.push(song);
       this.http.post(
-          'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/pushSongToUserHistory',
+          'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/pushSongToUserHistory',
           { user_name: this.userName,
             email: this.userEmail,
             song_name: song.name }
@@ -72,7 +72,7 @@ export class HeaderService {
   public onLikeAdded(song: Song) {
       this.likesSongs.push(song);
       this.http.post(
-          'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/pushSongToUserLikes',
+          'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/pushSongToUserLikes',
           { user_name: this.userName,
             email: this.userEmail,
             song_name: song.name }
@@ -87,7 +87,7 @@ export class HeaderService {
   public onLikeRemove(song: Song) {
       this.likesSongs.splice(this.likesSongs.indexOf(song), 1);
       this.http.post(
-          'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/removeSongFromUserLikes',
+          'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/removeSongFromUserLikes',
           { user_name: this.userName,
             email: this.userEmail,
             song_name: song.name }
@@ -101,7 +101,7 @@ export class HeaderService {
   }    
 
   public getRandomSongList() {
-    this.http.get('http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/getRandomSongList')
+    this.http.get('http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/getRandomSongList')
     .subscribe(//callback for any change in Fairytail array
       (response: Response) => {
         this.randomSongs = response.json();
@@ -117,7 +117,7 @@ export class HeaderService {
       userPassword: string
     ) { //runs only once? 
     this.http.post(
-        'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/signInUser',
+        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/signInUser',
         { name: userName,
           email: userEmail,
           pass: userPassword }
@@ -140,7 +140,7 @@ export class HeaderService {
       userPassword: string
     ) { //runs only once? 
     this.http.post(
-        'http://ec2-52-89-100-148.us-west-2.compute.amazonaws.com:3000/signUpUser',
+        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/signUpUser',
         { name: userName,
           email: userEmail,
           pass: userPassword }
