@@ -23,7 +23,7 @@ export class HeaderService {
   public getSongHistoryList (
     ) { //runs only once? 
     this.http.post(
-        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/getSongHistoryList',
+        'https://virtuoso-music.herokuapp.com/getSongHistoryList',
         { user_name: this.userName,
           email: this.userEmail }
       ).subscribe(//callback for any change in Fairytail array
@@ -40,7 +40,7 @@ export class HeaderService {
   public getSongLikesList (
     ) { //runs only once? 
     this.http.post(
-        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/getSongLikesList',
+        'https://virtuoso-music.herokuapp.com/getSongLikesList',
         { user_name: this.userName,
           email: this.userEmail }
       ).subscribe(//callback for any change in Fairytail array
@@ -57,7 +57,7 @@ export class HeaderService {
   public onHistoryAdded(song: Song) {
       this.historySongs.push(song);
       this.http.post(
-          'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/pushSongToUserHistory',
+          'https://virtuoso-music.herokuapp.com/pushSongToUserHistory',
           { user_name: this.userName,
             email: this.userEmail,
             song_name: song.name }
@@ -72,7 +72,7 @@ export class HeaderService {
   public onLikeAdded(song: Song) {
       this.likesSongs.push(song);
       this.http.post(
-          'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/pushSongToUserLikes',
+          'https://virtuoso-music.herokuapp.com/pushSongToUserLikes',
           { user_name: this.userName,
             email: this.userEmail,
             song_name: song.name }
@@ -87,7 +87,7 @@ export class HeaderService {
   public onLikeRemove(song: Song) {
       this.likesSongs.splice(this.likesSongs.indexOf(song), 1);
       this.http.post(
-          'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/removeSongFromUserLikes',
+          'https://virtuoso-music.herokuapp.com/removeSongFromUserLikes',
           { user_name: this.userName,
             email: this.userEmail,
             song_name: song.name }
@@ -101,7 +101,7 @@ export class HeaderService {
   }    
 
   public getRandomSongList() {
-    this.http.get('http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/getRandomSongList')
+    this.http.get('https://virtuoso-music.herokuapp.com/getRandomSongList')
     .subscribe(//callback for any change in Fairytail array
       (response: Response) => {
         this.randomSongs = response.json();
@@ -117,7 +117,7 @@ export class HeaderService {
       userPassword: string
     ) { //runs only once? 
     this.http.post(
-        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/signInUser',
+        'https://virtuoso-music.herokuapp.com/signInUser',
         { name: userName,
           email: userEmail,
           pass: userPassword }
@@ -140,7 +140,7 @@ export class HeaderService {
       userPassword: string
     ) { //runs only once? 
     this.http.post(
-        'http://virtuose-load-balancer-936867685.us-west-2.elb.amazonaws.com/signUpUser',
+        'https://virtuoso-music.herokuapp.com/signUpUser',
         { name: userName,
           email: userEmail,
           pass: userPassword }
